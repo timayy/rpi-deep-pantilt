@@ -95,16 +95,16 @@ def pantilt_process_manager(model_cls, labels=("person",), rotation=0):
 
         # PID gains for panning
 
-        pan_p = manager.Value("f", 3.6463)
+        pan_p = manager.Value("f", 0.0055)
         # 0 time integral gain until inferencing is faster than ~50ms
-        pan_i = manager.Value("f", 0.4181)
-        pan_d = manager.Value("f", 13)
+        pan_i = manager.Value("f", 0.00045)
+        pan_d = manager.Value("f", 0.0)
 
         # PID gains for tilting
-        tilt_p = manager.Value("f", 3.6463)
+        tilt_p = manager.Value("f", 0.003)
         # 0 time integral gain until inferencing is faster than ~50ms
-        tilt_i = manager.Value("f", 0.4181)
-        tilt_d = manager.Value("f", 13)
+        tilt_i = manager.Value("f", 0.0005)
+        tilt_d = manager.Value("f", 0.0)
 
         detect_processr = Process(
             target=run_pantilt_detect,

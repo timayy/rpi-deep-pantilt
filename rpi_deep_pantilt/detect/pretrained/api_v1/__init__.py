@@ -55,3 +55,14 @@ class FoxAutoMLInt8(object):
             "Please specify--api-version=2 to load FoxAutoMLInt8 predictor"
         )
 
+class VulpesAutoMLInt8(object):
+    LABELS = []
+
+    def validate_labels(self):
+        return False
+
+    def __init__(self, *args, **kwargs):
+        raise NotImplementedError(
+            "Please specify--api-version=2 to load VulpesAutoMLInt8 predictor"
+        )
+

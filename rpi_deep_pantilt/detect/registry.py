@@ -21,6 +21,7 @@ class ModelRegistry(object):
     EDGETPU_CLASSES = (
         "SSDMobileNetV3EdgeTPU",
         "FaceSSDMobileNetV2EdgeTPU",
+        "FoxEdgeTPU",
     )
 
     def __init__(self, edge_tpu, api_version, dtype):

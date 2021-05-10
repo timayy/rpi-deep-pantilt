@@ -16,13 +16,14 @@ class ModelRegistry(object):
         "SSDMobileNetV3Int8",
         "LeopardAutoMLInt8",
         "FoxAutoMLInt8",
+        "VulpesAutoMLInt8",
     )
 
     EDGETPU_CLASSES = (
         "SSDMobileNetV3EdgeTPU",
         "FaceSSDMobileNetV2EdgeTPU",
         "FoxEdgeTPU",
-        "RealFoxEdgeTPU",
+        "VulpesEdgeTPU",
     )
 
     def __init__(self, edge_tpu, api_version, dtype):

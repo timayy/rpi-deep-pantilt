@@ -19,6 +19,7 @@ from rpi_deep_pantilt.detect.pretrained.api_v2.automl_fox import (
     FoxEdgeTPU,
 )
 
-from rpi_deep_pantilt.detect.pretrained.api_v2.automl_real_fox import (
-    RealFoxEdgeTPU,
+from rpi_deep_pantilt.detect.pretrained.api_v2.automl_vulpes import (
+    VulpesAutoMLInt8,
+    VulpesEdgeTPU,
 )

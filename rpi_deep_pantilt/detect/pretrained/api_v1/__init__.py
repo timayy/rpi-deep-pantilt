@@ -55,7 +55,7 @@ class FoxAutoMLInt8(object):
             "Please specify--api-version=2 to load FoxAutoMLInt8 predictor"
         )
 
-class RealFoxAutoMLInt8(object):
+class VulpesAutoMLInt8(object):
     LABELS = []
 
     def validate_labels(self):
@@ -63,6 +63,6 @@ class RealFoxAutoMLInt8(object):
 
     def __init__(self, *args, **kwargs):
         raise NotImplementedError(
-            "Please specify--api-version=2 to load RealFoxAutoMLInt8 predictor"
+            "Please specify--api-version=2 to load VulpesAutoMLInt8 predictor"
         )
 

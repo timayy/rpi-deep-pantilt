@@ -42,7 +42,7 @@ class VulpesEdgeTPU(TFLiteDetectionPostProcessPredictor):
 
     def __init__(
         self,
-        model_name="vulpes_fox_detector",
+        model_name="vulpes_detector",
         tflite_file=rpi_deep_pantilt_path[0]
         + "/data/vulpes_edgetpu.tflite",  # substitute the FULL path to your .tflite file
         label_file=rpi_deep_pantilt_path[0]

@@ -13,3 +13,7 @@ from rpi_deep_pantilt.detect.pretrained.api_v2.ssd_mobilenet_v3_coco import (
 from rpi_deep_pantilt.detect.pretrained.api_v2.automl_leopard_example import (
     LeopardAutoMLInt8,
 )
+
+from rpi_deep_pantilt.detect.pretrained.api_v2.automl_fox import (
+    FoxAutoMLInt8,
+)

@@ -15,6 +15,7 @@ class ModelRegistry(object):
         "FaceSSDMobileNetV2Int8",
         "SSDMobileNetV3Int8",
         "LeopardAutoMLInt8",
+        "FoxAutoMLInt8",
     )
 
     EDGETPU_CLASSES = (

@@ -18,8 +18,8 @@ class VulpesAutoMLInt8(TFLiteDetectionPostProcessPredictor):
         label_file=rpi_deep_pantilt_path[0]
         + "/data/vulpes_label_map.pbtxt",  # you only need to change this if adding additional labels (background class is implicitly id:0)
         input_shape=(
-            300,
-            300,
+            416,
+            416,
         ),  # make sure height, width match metadata.json inputShape
         min_score_thresh=0.95,  # increase threshold to reduce false positive results
         input_type=tf.uint8,  # do not change
@@ -48,8 +48,8 @@ class VulpesEdgeTPU(TFLiteDetectionPostProcessPredictor):
         label_file=rpi_deep_pantilt_path[0]
         + "/data/vulpes_label_map.pbtxt",  # you only need to change this if adding additional labels (background class is implicitly id:0)
         input_shape=(
-            300,
-            300,
+            416,
+            416,
         ),  # make sure height, width match metadata.json inputShape
         min_score_thresh=0.95,  # increase threshold to reduce false positive results
         input_type=tf.uint8,  # do not change

@@ -22,6 +22,7 @@ class ModelRegistry(object):
         "SSDMobileNetV3EdgeTPU",
         "FaceSSDMobileNetV2EdgeTPU",
         "FoxEdgeTPU",
+        "RealFoxEdgeTPU",
     )
 
     def __init__(self, edge_tpu, api_version, dtype):

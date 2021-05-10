@@ -51,7 +51,7 @@ class FoxEdgeTPU(TFLiteDetectionPostProcessPredictor):
             320,
             320,
         ),  # make sure height, width match metadata.json inputShape
-        min_score_thresh=0.85,  # increase threshold to reduce false positive results
+        min_score_thresh=0.92,  # increase threshold to reduce false positive results
         input_type=tf.uint8,  # do not change
     ):
 

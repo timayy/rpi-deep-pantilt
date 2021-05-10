@@ -44,7 +44,7 @@ class FoxEdgeTPU(TFLiteDetectionPostProcessPredictor):
         self,
         model_name="fox_detector",
         tflite_file=rpi_deep_pantilt_path[0]
-        + "/data/fox.tflite",  # substitute the FULL path to your .tflite file
+        + "/data/fox_edgetpu.tflite",  # substitute the FULL path to your .tflite file
         label_file=rpi_deep_pantilt_path[0]
         + "/data/fox_label_map.pbtxt",  # you only need to change this if adding additional labels (background class is implicitly id:0)
         input_shape=(
